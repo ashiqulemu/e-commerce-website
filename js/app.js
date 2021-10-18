@@ -30,3 +30,27 @@
     let menu  = document.getElementById('mobileMenu');
         menu.classList.remove('active');
  }
+ function catchSize(event){ 
+       let location  =  event.target.parentNode.previousElementSibling.value;
+        document.getElementById('sizeName').innerHTML = location; 
+ }
+ function catchColor(event){ 
+       let location  =  event.target.parentNode.previousElementSibling.value;
+        document.getElementById('colorName').innerHTML = location; 
+ }
+
+ function dec(){        
+         let val = document.getElementById('cartValue').value--;
+
+        if(val <= 0){
+            document.getElementById('dec').disabled=true;
+        } 
+ }
+
+
+ function inc(){        
+    let val = document.getElementById('cartValue').value++; 
+    if(val >= 0){
+        document.getElementById('dec').disabled=false;
+    }
+}

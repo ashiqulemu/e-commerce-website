@@ -7,9 +7,9 @@
     <title>e-Commerce</title>
     <script src="./js/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.css">  
+    <link rel="stylesheet" href="./css/app.css">
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> 
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="./js/jquery.exzoom.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/jquery.exzoom.css" />
@@ -143,38 +143,138 @@
         </div>
     </section>
 
-    <section>
+    <section class="productDetails py-5">
         <div class="container">
-            <div class="col-md-6">
-                <div class="exzoom hidden" id="exzoom">
-                    <div class="exzoom_img_box">
-                        <ul class='exzoom_img_ul'>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                            <li><img src="./images/images/blog-01.jpg"/></li>
-                           
-                        </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="exzoom hidden mx-auto mb-4" id="exzoom">
+                        <div class="exzoom_img_box">
+                            <ul class='exzoom_img_ul'>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+                                <li><img src="./images/images/blog-01.jpg" /></li>
+
+                            </ul>
+                        </div>
+                        <div class="exzoom_nav"></div>
+                        <p class="exzoom_btn">
+                            <a href="javascript:void(0);" class="exzoom_prev_btn  d-flex align-items-center  ">
+                                <span class="iconify " data-icon="bi:arrow-left-circle"></span>
+                             </a>
+                                    <a href="javascript:void(0);" class="exzoom_next_btn d-flex align-items-center">
+                                         <span class="iconify" data-icon="bi:arrow-right-circle"></span>
+                                         </a>
+                        </p>
                     </div>
-                    <div class="exzoom_nav"></div>
-                    <p class="exzoom_btn">
-                        <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
-                        <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-dark font-weight-bold">Blush Beanie</h5>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <h5 class="price text-dark">$15.00</h5>
+                        <div class="review d-flex flex-wrap justify-content-center align-items-center">
+                            <span>
+                                <i class="iconify" data-icon="codicon:star-full"></i>
+                                <i class="iconify" data-icon="codicon:star-full"></i>
+                                <i class="iconify" data-icon="codicon:star-full"></i>
+                                <i class="iconify" data-icon="codicon:star-full"></i>
+                                <i class="iconify" data-icon="codicon:star-full"></i>
+                            </span>
+                            <span class="text-dark ml-2">(12 reviews)</span>
+                        </div>
+                    </div>
+                    <p> Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike.
+                        Perfect for pairing with denim and white kicks for a stylish kalles vibe.
+                        Go kalles this summer with this vintage navy and white striped v-neck t-shirt from the Nike.
+                        Perfect for pairing with denim and white kicks for a stylish kalles vibe.
                     </p>
+                    <small class="font-weight-bold text-uppercase text-dark"> Color:
+                        <span id="colorName" class="text-capitalize"></span>
+                    </small>
+                    <div class="variationSec my-2">
+                        <!-- color 1 -->
+                        <input type="radio" id="grey" class="variation" name="variation" value="gray">
+                        <label for="grey" title="grey">
+                            <div class="setColor grey" onclick="catchColor(event);"></div>
+                        </label>
+                        <!-- color2 -->
+                        <input type="radio" id="pink" class="variation" name="variation" value="pink">
+                        <label for="pink" title="pink">
+                            <div class="setColor pink" onclick="catchColor(event);"></div>
+                        </label>
+                        <!-- color 3 -->
+                        <input type="radio" id="black" class="variation" name="variation" value="black">
+                        <label for="black" title="black">
+                            <div class="setColor black" onclick="catchColor(event);"></div>
+                        </label>
+                    </div>
+
+                    <small class="font-weight-bold text-uppercase text-dark">
+                        Size:
+                        <span id="sizeName" class="text-capitalize"></span>
+                    </small>
+
+                    <div class="variationSize my-2">
+                        <!-- color 1 -->
+                        <input type="radio" id="small" class="variation" name="variation" value="Small">
+                        <label for="small" title="small">
+                            <div class="setValue " onclick="catchSize(event);">S</div>
+                        </label>
+                        <!-- color2 -->
+                        <input type="radio" id="medium" class="variation" name="variation" value="Medium">
+                        <label for="medium" title="medium">
+                            <div class="setValue " onclick="catchSize(event);">M</div>
+                        </label>
+                        <!-- color 3 -->
+                        <input type="radio" id="large" class="variation" name="variation" value="Large">
+                        <label for="large" title="large">
+                            <div class="setValue " onclick="catchSize(event);">L</div>
+                        </label>
+                    </div>
+
+                    <div class="addCart d-flex">
+                        <div class="cart">
+                            <button id="dec" onclick="dec()">-</button>
+                            <input type="text" id="cartValue" value="1">
+                            <button onclick="inc()">+</button>
+                        </div>
+                        <button class="addCartBtn">Add Cart</button>
+                    </div>
+                    <img src="./images/trust_img2.png" class="img-fluid my-3">
+                    <div class="product_meta">
+                        <span class="sku_wrapper"><span class="cb">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">SKU:</font>
+                                </font>
+                            </span> <span class="sku value cg d-inline-block">P15-2</span></span><br>
+                        <span class="posted_in"><span class="cb">Categories:</span> <a href="shop-filter-options.html"
+                                class="cg">All</a>, <a href="shop-filter-options.html" class="cg">Best seller</a>, <a
+                                href="shop-filter-options.html" class="cg">Bottom</a>, <a
+                                href="shop-filter-options.html" class="cg">Dress</a>, <a href="shop-filter-options.html"
+                                class="cg">New Arrival</a>, <a href="shop-filter-options.html"
+                                class="cg">Women</a></span><br>
+                        <span class="tagged_as"><span class="cb">
+                            Tags:</span> <a href="shop-filter-options.html"
+                                class="cg">Color Black</a>, <a href="shop-filter-options.html" class="cg">Color
+                                Grey</a>, <a href="shop-filter-options.html" class="cg">Color Pink</a>, <a
+                                href="shop-filter-options.html" class="cg">Price $7-$50</a>, <a
+                                href="shop-filter-options.html" class="cg">Size L</a>, <a
+                                href="shop-filter-options.html" class="cg">Size M</a>, <a
+                                href="shop-filter-options.html" class="cg">Size S</a></span>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6"></div>
         </div>
     </section>
 
@@ -281,24 +381,24 @@
         </div>
     </footer>
 
-   
-   
+
+
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.1/iconify.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src='./js/app.js'> </script>
     <script src="./js/slick.min.js"></script>
-   
+
     <script type="text/javascript">
 
-        $('.container').imagesLoaded( function() {
-      $("#exzoom").exzoom({
-            autoPlay: false,
+        $('.container').imagesLoaded(function () {
+            $("#exzoom").exzoom({
+                autoPlay: false,
+            });
+            $("#exzoom").removeClass('hidden')
         });
-      $("#exzoom").removeClass('hidden')
-    });
-    
+
     </script>
 
 </body>
