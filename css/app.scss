@@ -390,6 +390,10 @@ body {
   top: -11px;
   bottom: -7px;
   background: #fff;
+  &.forMobile{
+    left: -8px;
+    right :unset;
+  }
 }
 
 .arrow.next.slick-arrow {
@@ -2131,6 +2135,7 @@ footer {
     align-items: center;
     overflow: hidden;
     padding: 0;
+
     button {
       outline: none;
       border: 0;
@@ -2149,13 +2154,14 @@ footer {
       padding: 0 3px;
       border: 0;
       outline: none;
-      text-align: center; 
+      text-align: center;
       font-weight: bold;
     }
-    
+
   }
 }
-.addCartBtn{
+
+.addCartBtn {
   border-radius: 24px;
   background-color: #00BAE5;
   color: #fff;
@@ -2166,14 +2172,53 @@ footer {
   cursor: pointer;
   margin: 0 10px;
   transition: all 0.3s ease-in-out;
-  &:hover{
+
+  &:hover {
     background: #000;
   }
 }
 
-.exzoom .exzoom_btn a{
-  width: 58px !important;;
+.exzoom .exzoom_btn a {
+  width: 58px !important;
+  ;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.navbar-toggler {
+  @media(max-width:991px) {
+    display: none;
+  }
+}
+
+.userActivitiesMobile,
+.categoryMobile {
+  display: none;
+  flex: 1;
+}
+
+@media(max-width:991px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    flex: 1;
+  }
+
+  .userActivitiesMobile,
+  .categoryMobile {
+    display: block;
+    cursor: pointer;
+  }
+  .userActivitiesMobile{
+    text-align: right;
+    .iconify{
+      color :#000; 
+      font-size: 1.5rem;
+    }
+  }
 }

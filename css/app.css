@@ -389,6 +389,11 @@ body {
   background: #fff;
 }
 
+.modal-dialog.custom.forMobile {
+  left: -8px;
+  right: unset;
+}
+
 .arrow.next.slick-arrow {
   position: absolute;
   right: 0;
@@ -2012,5 +2017,50 @@ footer .social-sites li a .iconify {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.userActivitiesMobile,
+.categoryMobile {
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .userActivitiesMobile,
+  .categoryMobile {
+    display: block;
+    cursor: pointer;
+  }
+  .userActivitiesMobile {
+    text-align: right;
+  }
+  .userActivitiesMobile .iconify {
+    color: #000;
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

@@ -36,10 +36,22 @@
             </div>
         </div>
     </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <h4 class="categoryMobile">
+            <span class="iconify" data-toggle="modal" data-target="#mobileMenu" data-icon="ci:menu-alt-03"></span>
+        </h4>
         <a class="navbar-brand" href="#">
             <img class="img-fluid" width="160px" src="./images/images/logo.jpg" alt="">
         </a>
+        <div class=" userActivitiesMobile">
+            <span class="iconify mx-2" data-toggle="modal" data-target="#searchbar"
+                data-icon="clarity:search-line"></span>
+            <span class="iconify mx-2 text-dark" data-icon="ph:user-thin" data-toggle="modal"
+                data-target="#userLogin"></span>
+            <span class="iconify mx-2 text-dark" data-icon="emojione-monotone:yellow-heart"></span>
+            <span class="iconify mx-2 text-dark" data-icon="ei:cart" data-toggle="modal" data-target="#cart"></span>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -130,6 +142,191 @@
             </div>
         </div>
     </nav>
+    <!-- modal for mobile menu -->
+    <div class="modal " id="mobileMenu" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog custom forMobile" role="document">
+            <div class="modal-content h-100"> 
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#menu" role="tab"
+                                aria-controls="menu" aria-selected="true">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="categories-tab" data-toggle="tab" href="#categories" role="tab"
+                                aria-controls="categories" aria-selected="false">Categories</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active"  style="overflow-y: auto; max-height: 100vh;" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="">Demo</a> </li>
+                                <li class="list-group-item"> <a href="">Shop</a></li>
+                                <li class="list-group-item"><a href="">Product</a></li>
+                                <li class="list-group-item"><a href="">Sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade"  style="overflow-y: auto; max-height: 100vh;" id="categories" role="tabpanel" aria-labelledby="categories-tab">
+                            <ul  class="list-group list-group-flush">
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+                                <li  class="list-group-item">
+                                    <a href="https://yourdomain.com/ecom/search?category_id=18">
+                                        <img src="https://hasibuzzaman.com/ecom/uploads/categories/icon/VIEf7VPCm6EG19vselKVVzIZc8DoJGXtIDhtfWXW.jpg"
+                                            width="30">
+                                        <span class="ml-1">Baby Care &amp; Toy’s</span></a>
+                                </li>
+    
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for search -->
+    <div class="modal " id="searchbar" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog custom" role="document">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <h5 class="modal-title text-black" id="exampleModalLabel">SEARCH OUR SITE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <select name="product_type" class="form-control">
+                        <option value="*">All Categories</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Bag">Bag</option>
+                        <option value="Camera">Camera</option>
+                        <option value="Decor">Decor</option>
+                        <option value="Earphones">Earphones</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Headphone">Headphone</option>
+                        <option value="Men">Men</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="Speaker">Speaker</option>
+                        <option value="Watch">Watch</option>
+                        <option value="Women">Women</option>
+                    </select>
+                    <input class="form-control mt-3" type="text" placeholder="Search for products">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for user -->
+    <div class="modal " id="userLogin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog custom" role="document">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <h5 class="modal-title text-black" id="exampleModalLabel">LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
+                    </form>
+                    <p class="my-2">New customer?
+                        <a href="#" class="link">Create your account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for cart -->
+    <div class="modal " id="cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog custom" role="document">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <h5 class="modal-title text-black" id="exampleModalLabel">MINI SHOPPING CART</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex  px-3 justify-content-between text-dark">
+                        <div>
+                            <h5>Subtotal</h5>
+                        </div>
+                        <div>
+                            <h5>$91.00</h5>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Taxes, shipping and discounts codes calculated at checkout</p>
+                        <label for="cart_agree">
+                            <input type="checkbox" name="" id="">
+                            I agree with the terms and conditions.</label>
+                    </div>
+                    <a href="" class="button btn-cart ">View
+                        cart
+                    </a>
+                    <a href="" class="button btn-cart ">- checkout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="siteBreadcrumb">
         <div class="container">
@@ -172,10 +369,10 @@
                         <p class="exzoom_btn">
                             <a href="javascript:void(0);" class="exzoom_prev_btn  d-flex align-items-center  ">
                                 <span class="iconify " data-icon="bi:arrow-left-circle"></span>
-                             </a>
-                                    <a href="javascript:void(0);" class="exzoom_next_btn d-flex align-items-center">
-                                         <span class="iconify" data-icon="bi:arrow-right-circle"></span>
-                                         </a>
+                            </a>
+                            <a href="javascript:void(0);" class="exzoom_next_btn d-flex align-items-center">
+                                <span class="iconify" data-icon="bi:arrow-right-circle"></span>
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -265,8 +462,8 @@
                                 class="cg">New Arrival</a>, <a href="shop-filter-options.html"
                                 class="cg">Women</a></span><br>
                         <span class="tagged_as"><span class="cb">
-                            Tags:</span> <a href="shop-filter-options.html"
-                                class="cg">Color Black</a>, <a href="shop-filter-options.html" class="cg">Color
+                                Tags:</span> <a href="shop-filter-options.html" class="cg">Color Black</a>, <a
+                                href="shop-filter-options.html" class="cg">Color
                                 Grey</a>, <a href="shop-filter-options.html" class="cg">Color Pink</a>, <a
                                 href="shop-filter-options.html" class="cg">Price $7-$50</a>, <a
                                 href="shop-filter-options.html" class="cg">Size L</a>, <a
