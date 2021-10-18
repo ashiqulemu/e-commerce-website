@@ -1244,6 +1244,22 @@ body {
   width: 97%;
 }
 
+.siteBreadcrumb{
+  background-color: #F6F6F8;
+ .breadcrumb{
+  background-color: #F6F6F8;
+  .breadcrumb-item{
+    a{
+      color: #040707;
+    }
+  }
+ } 
+}
+
+.productView{
+  .left{}
+  .right{}
+}
 footer {
   background: #F6F6F8;
 
@@ -2045,3 +2061,10 @@ footer {
     }
   }
 }
+
+   
+#exzoom {
+  width: 400px;
+  /*height: 400px;*/
+} 
+.hidden { display: none; }

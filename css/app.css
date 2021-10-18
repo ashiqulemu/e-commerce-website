@@ -1228,6 +1228,18 @@ body {
   width: 97%;
 }
 
+.siteBreadcrumb {
+  background-color: #F6F6F8;
+}
+
+.siteBreadcrumb .breadcrumb {
+  background-color: #F6F6F8;
+}
+
+.siteBreadcrumb .breadcrumb .breadcrumb-item a {
+  color: #040707;
+}
+
 footer {
   background: #F6F6F8;
 }
@@ -1880,5 +1892,14 @@ footer .social-sites li a .iconify {
   .cart .inner .right {
     margin-bottom: 10px;
   }
+}
+
+#exzoom {
+  width: 400px;
+  /*height: 400px;*/
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=app.css.map */
