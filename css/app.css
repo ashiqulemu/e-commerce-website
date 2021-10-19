@@ -1264,7 +1264,7 @@ body {
   color: #040707;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .productView {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2098,5 +2098,57 @@ footer .social-sites li a .iconify {
     color: #000;
     font-size: 1.5rem;
   }
+}
+
+.shopCategories .cat ul {
+  list-style: none;
+  margin: 0;
+}
+
+.shopCategories .cat ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.shopCategories .cat ul li a {
+  margin: 0 10px;
+  color: #222;
+  text-decoration: none;
+}
+
+.shopCategories .cat ul li a:hover {
+  color: #00BAE5;
+}
+
+.mobileViewCategory {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileViewCategory {
+    display: block;
+  }
+}
+
+.mainCategories {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mainCategories {
+    display: block;
+  }
+}
+
+.banner {
+  background-position: center center;
+  background: url("../images/banner/shop-banner.jpg");
+  background-size: cover;
+}
+
+.sorting {
+  width: 250px;
+  border-radius: 14px;
 }
 /*# sourceMappingURL=app.css.map */
