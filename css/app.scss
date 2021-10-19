@@ -448,12 +448,13 @@ body {
 
   &:before {
     content: '';
-    width: 350px;
+    width: 115%;
     height: 2px;
     background-color: #000;
     position: absolute;
     top: 13px;
-    left: -28%;
+    left: -7%;
+    right: -8%;
     z-index: -1;
   }
 }
