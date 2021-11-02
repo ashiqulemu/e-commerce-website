@@ -481,10 +481,7 @@
 
                         </div>
                     </div>
-                  </div>
-                     
-                     
-                    
+                  </div> 
                     <div class="bottomTotal">
                         <div class="row text-black">
                             <div class="col-md-6">
@@ -1101,10 +1098,15 @@
         <div class="container">
             <div class="my-4">
                 <div class="row justify-content-lg-between">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-secondary">INFORMATION</h5>
+                    <div class="col-lg-3 col-md-3 col-sm-12  my-2">
+                        <h5 class="text-secondary d-flex justify-content-between">
+                            <span>INFORMATION</span>
+                            <span onclick="mobileViewActive('info');" class="iconify clickableIcon" data-icon="akar-icons:plus"></span>
+ 
+
+                        </h5>
                         <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column  visualcolumn" id="colOne">
                             <li class="nav-item py-1"><a class="text-secondary"
                                     href="https://www.rabibar.com/account">Account</a></li>
                             <li class="nav-item py-1"><a class="text-secondary"
@@ -1116,10 +1118,13 @@
                         </ul>
                         <!-- End Nav Link -->
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-secondary">USEFUL LINKS</h5>
+                    <div class="col-lg-3 col-md-3 col-sm-12  my-2">
+                        <h5 class="text-secondary d-flex justify-content-between">
+                            <span>USEFUL LINK</span>
+                            <span onclick="mobileViewActive('link');" class="iconify clickableIcon" data-icon="akar-icons:plus"></span>
+                        </h5>
                         <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column visualcolumn" id="colTwo">
                             <li class="nav-item py-1"><a class="text-secondary"
                                     href="https://www.rabibar.com/faq">FAQ</a>
                             </li>
@@ -1133,15 +1138,18 @@
                         </ul>
                         <!-- End Nav Link -->
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                    <div class="col-lg-3 col-md-3 col-sm-12  my-2">
                         <!-- End Nav Link -->
                         <div id="contact">
-                            <h5 class="text-secondary">CONTACT US</h5>
-                            <div class="text-secondary">
+                            <h5 class="text-secondary d-flex justify-content-between">
+                                <span>CONTACT US</span>
+                                <span onclick="mobileViewActive('contact');" class="iconify clickableIcon" data-icon="akar-icons:plus"></span>
+                            </h5>
+                            <div class="text-secondary visualcolumn" id="colThree">
                                 <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
                                 01886335834
                             </div>
-                            <ul class="list-inline mb-0 mt-3 social-sites">
+                            <ul class="list-inline mb-0 mt-3 social-sites visualcolumn">
                                 <li class="list-inline-item">
                                     <a class="text-secondary" href="">
                                         <span class="iconify" data-icon="ant-design:facebook-filled"
@@ -1169,10 +1177,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-secondary">OUR APP</h5>
+                    <div class="col-lg-3 col-md-3 col-sm-12  my-2">
+                        <h5 class="text-secondary d-flex justify-content-between">
+                            <span>OUR APPS</span>
+                            <span onclick="mobileViewActive('apps');" class="iconify clickableIcon" data-icon="akar-icons:plus"></span>
+                        </h5>
                         <!-- Nav Link -->
-                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column visualcolumn" id="colFour">
                             <li class="nav-item w-100">
                                 <a class="py-1 d-block app_download_link" href=" ">
                                     <img loading="lazy" class='img-fluid'
@@ -1192,7 +1203,7 @@
             <div class="space-1">
                 <!-- Copyright -->
                 <div class="text-lg-center mx-lg-auto">
-                    <p class="text-secondary small">© 2021 Apon Health Limited. All rights reserved.</p>
+                    <p class="text-secondary small text-center">© 2021 your business Limited. All rights reserved.</p>
                 </div>
                 <!-- End Copyright -->
             </div>

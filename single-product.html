@@ -300,31 +300,117 @@
         <div class="modal-dialog custom" role="document">
             <div class="modal-content h-100">
                 <div class="modal-header">
-                    <h5 class="modal-title text-black" id="exampleModalLabel">MINI SHOPPING CART</h5>
+                    <h5 class="modal-title text-black" id="exampleModalLabel">SHOPPING CART</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row d-flex  px-3 justify-content-between text-dark">
-                        <div>
-                            <h5>Subtotal</h5>
+                    <!-- empty cart -->
+                    <!-- <div class="shadow-sm py-2 px-1 text-center border-bottom"> Free Shipping for all orders over $100.00</div> 
+                  <div class="emptyProduct d-flex flex-column align-items-center justify-content-center">
+                   <span class="iconify" data-icon="clarity:shopping-bag-line"></span>
+                      <span class="py-2">Your cart is empty.</span>
+                      <a href="shop.html" class="btn btn-primary px-3 rounded">Return To Shop</a>
+                  </div> -->
+                  <div class="productListContaineR">
+                    <div class="productCartList border-bottom my-2">
+                        <div class="items">
+                            <img src="https://cdn.shopify.com/s/files/1/0332/6420/5963/products/acndb3127517966_q1_2-0_120x.jpg?v=1606354275"
+                                class="img-fluid" alt="">
                         </div>
-                        <div>
-                            <h5>$91.00</h5>
+                        <div class="items">
+                            <a href="" class="pname lead">
+                                <h6>producct Name</h6>
+                            </a>
+                            <div class="type">Grey / S</div>
+                            <div class="price">$15</div>
+                            <div class="addCart mt-2 d-flex justify-content-between align-items-center">
+                                <div class="cart">
+                                    <button id="dec" onclick="dec()">-</button>
+                                    <input type="text" id="cartValue" value="1">
+                                    <button onclick="inc()">+</button>
+                                </div>
+                            </div>
+                            <div class="modify ml-1">
+                                <span class="iconify mr-1" data-icon="bi:pencil-square"></span>
+                                <span class="iconify" data-icon="carbon:trash-can"></span>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="form-group">
-                        <p>Taxes, shipping and discounts codes calculated at checkout</p>
-                        <label for="cart_agree">
-                            <input type="checkbox" name="" id="">
-                            I agree with the terms and conditions.</label>
+                    <div class="productCartList border-bottom my-2">
+                        <div class="items">
+                            <img src="https://cdn.shopify.com/s/files/1/0332/6420/5963/products/acndb3127517966_q1_2-0_120x.jpg?v=1606354275"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="items">
+                            <a href="" class="pname lead">
+                                <h6>producct Name</h6>
+                            </a>
+                            <div class="type">Grey / S</div>
+                            <div class="price">$15</div>
+                            <div class="addCart mt-2 d-flex justify-content-between align-items-center">
+                                <div class="cart">
+                                    <button id="dec" onclick="dec()">-</button>
+                                    <input type="text" id="cartValue" value="1">
+                                    <button onclick="inc()">+</button>
+                                </div>
+                            </div>
+                            <div class="modify ml-1">
+                                <span class="iconify mr-1" data-icon="bi:pencil-square"></span>
+                                <span class="iconify" data-icon="carbon:trash-can"></span>
+                            </div>
+
+                        </div>
                     </div>
-                    <a href="" class="button btn-cart ">View
-                        cart
-                    </a>
-                    <a href="" class="button btn-cart ">- checkout
-                    </a>
+                    <div class="productCartList border-bottom my-2">
+                        <div class="items">
+                            <img src="https://cdn.shopify.com/s/files/1/0332/6420/5963/products/acndb3127517966_q1_2-0_120x.jpg?v=1606354275"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="items">
+                            <a href="" class="pname lead">
+                                <h6>producct Name</h6>
+                            </a>
+                            <div class="type">Grey / S</div>
+                            <div class="price">$15</div>
+                            <div class="addCart mt-2 d-flex justify-content-between align-items-center">
+                                <div class="cart">
+                                    <button id="dec" onclick="dec()">-</button>
+                                    <input type="text" id="cartValue" value="1">
+                                    <button onclick="inc()">+</button>
+                                </div>
+                            </div>
+                            <div class="modify ml-1">
+                                <span class="iconify mr-1" data-icon="bi:pencil-square"></span>
+                                <span class="iconify" data-icon="carbon:trash-can"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                  </div> 
+                    <div class="bottomTotal">
+                        <div class="row text-black">
+                            <div class="col-md-6">
+                                <h4>Subtotal:</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>$114.00</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="checkbox" name="" id="chk">
+                                    <label for="chk">I agree with the terms and conditions.</label>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-12 text-center d-flex flex-column justify-content-center align-item-center">
+                                <a href="" class="text-center mb-2 btn btn-primary rounded"> View Cart</a>
+                                <a href="" class="text-center btn btn-info rounded"> Checkout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2387,7 +2387,7 @@ footer {
 // new css goes here 
 
 .text-black {
-  color: #000000!important;
+  color: #000000 !important;
 }
 
 .emptyProduct {
@@ -2403,9 +2403,10 @@ footer {
   justify-content: center;
 
   .items {
-    &:first-child{
+    &:first-child {
       flex: 0.5;
     }
+
     flex: 1;
     padding: 0 5px;
 
@@ -2414,51 +2415,93 @@ footer {
       line-height: 20px;
       color: #222;
       display: block;
-      &:hover {
 
-      }
+      &:hover {}
     }
 
     .modify {
       font-size: 19px;
       color: black;
       margin-top: 9px;
-      .iconify{
+
+      .iconify {
         cursor: pointer;
-        &:first-child{
-          &:hover{
+
+        &:first-child {
+          &:hover {
             color: aqua;
           }
         }
-        &:last-child{
 
-          &:hover{
+        &:last-child {
+
+          &:hover {
             color: red;
           }
         }
       }
     }
- 
+
   }
 
 }
-.bottomTotal{
+
+.bottomTotal {
   position: absolute;
+  background: #fff;
   bottom: 0;
   padding: 30px 20px;
   left: 0;
   right: 0;
   box-shadow: 7px 3px 20px 20px #00000014;
-    border-top: 1
-px
- solid #e5e5e5;
+  border-top: 1 px solid #e5e5e5;
 }
 
-.productListContainer{
+.productListContainer {
   max-height: 450px;
   overflow-y: auto;
-  &::-webkit-scrollbar{
-    width:2px;
+
+  &::-webkit-scrollbar {
+    width: 2px;
     background-color: rgb(240, 240, 240);
   }
+}
+
+.clickableIcon {
+
+  @media(max-width:767px) {
+    display: block;
+  }
+
+  display: none;
+}
+
+.visualcolumn {
+
+  @media(max-width:767px) {
+    display: none;
+
+    &.open {
+      display: block!important;
+      position: relative;
+      &:before{
+        content: '-';
+    position: absolute;
+    top: -33px;
+    right: -2px;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    color: #000;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+      }
+
+    }
+  }
+
+  display: block;
 }
