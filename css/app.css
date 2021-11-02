@@ -2232,4 +2232,84 @@ footer .social-sites li a .iconify {
 .main-area .items .sub-column li a:hover {
   color: #00DBEA;
 }
+
+.text-black {
+  color: #000000 !important;
+}
+
+.emptyProduct {
+  padding: 25px;
+}
+
+.emptyProduct .iconify {
+  font-size: 38px;
+}
+
+.productCartList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productCartList .items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5px;
+}
+
+.productCartList .items:first-child {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.productCartList .items .pname {
+  font-size: 14px;
+  line-height: 20px;
+  color: #222;
+  display: block;
+}
+
+.productCartList .items .modify {
+  font-size: 19px;
+  color: black;
+  margin-top: 9px;
+}
+
+.productCartList .items .modify .iconify {
+  cursor: pointer;
+}
+
+.productCartList .items .modify .iconify:first-child:hover {
+  color: aqua;
+}
+
+.productCartList .items .modify .iconify:last-child:hover {
+  color: red;
+}
+
+.bottomTotal {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 20px;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 7px 3px 20px 20px #00000014;
+          box-shadow: 7px 3px 20px 20px #00000014;
+  border-top: 1 px solid #e5e5e5;
+}
+
+.productListContainer {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.productListContainer::-webkit-scrollbar {
+  width: 2px;
+  background-color: #f0f0f0;
+}
 /*# sourceMappingURL=app.css.map */
