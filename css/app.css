@@ -2068,6 +2068,7 @@ footer .social-sites li a .iconify {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -2357,5 +2358,12 @@ footer .social-sites li a .iconify {
             align-items: center;
     pointer-events: none;
   }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 /*# sourceMappingURL=app.css.map */

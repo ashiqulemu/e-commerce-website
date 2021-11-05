@@ -2225,6 +2225,7 @@ footer {
 .categoryMobile {
   display: none;
   flex: 1;
+  margin-bottom: 0;
 }
 
 @media(max-width:991px) {
@@ -2504,4 +2505,12 @@ footer {
   }
 
   display: block;
+}
+
+// new css 
+
+.sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
