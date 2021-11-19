@@ -2366,4 +2366,75 @@ footer .social-sites li a .iconify {
   top: 0;
   z-index: 1000;
 }
+
+.bottom-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-menu {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    -webkit-box-shadow: 6px 15px 20px 2px #0000007d;
+            box-shadow: 6px 15px 20px 2px #0000007d;
+    background: #fff;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .bottom-menu .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bottom-menu .links a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px !important;
+    position: relative;
+  }
+  .bottom-menu .links a .iconify {
+    font-size: 1.3rem;
+  }
+  .bottom-menu .links a .count {
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    background-color: #000;
+    -webkit-box-shadow: 1px 1px 3px 0 #0000004d;
+            box-shadow: 1px 1px 3px 0 #0000004d;
+  }
+}
 /*# sourceMappingURL=app.css.map */
